@@ -1,1 +1,1 @@
-undefined;
+console.log('hello world')

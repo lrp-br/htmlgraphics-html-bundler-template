@@ -5,7 +5,7 @@ export const defaultPanelOptions = {
   calcsMutation: "standard",
   reduceOptions: {
     calcs: [
-      // Change `calcsMutation` to "custom" when changing the values
+      // Change `calcsMutation` to "custom" when changing the values.
       "lastNotNull",
       "last",
       "firstNotNull",

@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "sourceMap": true,
     "strict": true,
-    "target": "ESNext"
+    "target": "ESNext",
+    "types": ["node", "three"],
+    "typeRoots": [
+      "node_modules/@types",
+      "node_modules/three/examples/jsm"  // If you're using any specific types inside three.js's examples folder
+    ]
   },
   "include": ["src", "types"]
 }

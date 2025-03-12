@@ -6,7 +6,6 @@ module.exports = {
     "plugin:unicorn/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
-    "prettier",
   ],
   plugins: ["import"],
   rules: {
@@ -46,6 +45,8 @@ module.exports = {
     "unicorn/prefer-module": "off",
     "unicorn/prefer-node-protocol": "off",
     "unicorn/prevent-abbreviations": "off", // Common abbreviations are known and readable
+    "unicorn/expiring-todo-comments": "off",
+    "unicorn/prefer-querry-selector": "off",
   },
   overrides: [
     {
