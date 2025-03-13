@@ -1,6 +1,6 @@
-import { camera, controls, renderer, scene } from "./onInit";
+import {renderer} from "./onInit";
 
-console.log('hello world')
+console.log('onRender start')
 
 // get state string from db
 const valueField = data.series[0].fields[1];
@@ -40,12 +40,5 @@ if(value) {
   }
   console.log(value);
 }
-// Render loop
-function animate(): void {
-    requestAnimationFrame(animate);
-    controls.update(); // Update controls
-    renderer.render(scene, camera);
-}
-animate();
 
 console.log('rendering complete');

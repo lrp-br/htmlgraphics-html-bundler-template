@@ -34,6 +34,9 @@ export default [
       sourcemap: false,
     },
     plugins: [
+      postcss({
+        extract: "style.css",
+      }),
       typescript(),
       terser(),
       nodeResolve({

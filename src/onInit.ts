@@ -37,6 +37,16 @@ loader.load('http://localhost:5032/conveyorTest.glb', function (gltf) {
     // Set the camera position and look at the scene
     camera.position.z = 5;
     camera.lookAt(scene.position);
+
+    // Render loop
+    function animate(): void {
+        requestAnimationFrame(animate);
+        controls.update(); // Update controls
+        renderer.render(scene, camera);
+    }
+    animate();
 }, undefined, function (error) {
     console.error('An error happened', error);
 });
+
+console.log("one onInit pass")

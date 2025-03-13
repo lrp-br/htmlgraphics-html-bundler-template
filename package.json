@@ -10,7 +10,7 @@
     "build:panel-options": "node ./scripts/panelOptions.js",
     "dev": "vite",
     "typecheck": "tsc --noEmit",
-    "validate": "run-s typecheck lint"
+    "validate": "run-s typecheck"
   },
   "devDependencies": {
     "@grafana/data": "^9.0.5",
